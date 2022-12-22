@@ -1,0 +1,116 @@
+
+body {
+margin: 0;
+padding: 0;
+border: 1px solid black;
+width: 100%;
+height: 100%;
+}
+
+.wrapper {
+border: 1px solid purple;
+width: 1000px;
+font-size: 25px;
+
+text-align: center;
+margin: 50px auto;
+display: grid;
+grid-template-columns:  repeat(4, 1fr);
+/* grid-template-rows: repeat(5, 1fr); */
+gap: 10px 50px;
+/* grid-template-areas: 
+"one one two two "
+"three three two two"
+"four five six six"
+"seven seven seven eight"
+"nine nine ten eleven"
+; */
+grid-auto-rows: minmax(100px, auto);
+}
+.one{
+    /* grid-area: one; */
+    width: 100px;
+    height: 100px;
+    background: rgb(62, 58, 71);
+    /* grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4; */
+}
+.two{
+      /* grid-area: two; */
+     width: 100px;
+    height: 100px;
+    background: rgb(77, 12, 121);
+    /* grid-row: 1/3;
+    grid-column: 1/4; */
+}
+.three{
+      /* grid-area: three; */
+    background: rgb(189, 12, 136);
+     width: 100px;
+    height: 100px;
+}
+.four{
+    /* grid-area: four; */
+    background: rgb(134, 189, 8);
+ width: 100px;
+    height: 100px;
+}
+.five{
+    /* grid-area: five; */
+    background: rgb(117, 17, 17);
+ width: 100px;
+    height: 100px;
+}
+.six{
+    /* grid-area: six; */
+    background: rgb(35, 172, 160);
+ width: 100px;
+    height: 100px;
+}
+.seven{
+    /* grid-area: seven; */
+    background: rgb(30, 112, 160);
+ width: 100px;
+    height: 100px;
+}
+.eight{
+    /* grid-area: eight; */
+    background: rgb(31, 180, 63);
+ width: 100px;
+    height: 100px;
+}
+.nine{
+    /* grid-area: nine; */
+    background: rgb(189, 131, 24);
+ width: 100px;
+    height: 100px;
+}
+.ten{
+    /* grid-area: ten; */
+    background: rgb(155, 12, 48);
+ width: 100px;
+    height: 100px;
+}
+.eleven {
+    /* grid-area: eleven; */
+    background: rgb(102, 40, 40);
+ width: 100px;
+    height: 100px;
+}
+.a {
+    /* width: 100px;
+    height: 100px; */
+    background: blue;
+}
+.b {
+    /* width: 100px;
+    height: 100px; */
+    background: yellow;
+}
+.c {
+    /* width: 100px;
+    height: 100px; */
+    background: red;
+}
