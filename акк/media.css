@@ -3,7 +3,7 @@
     max-width: 768px;
     /* height: 6000px; */
   }
-   .header {
+  .header {
     height: 117px;
   }
   .navbar {
@@ -24,10 +24,10 @@
   .nav_item:last-child {
     margin-left: 2px;
   }
- 
+
   .main {
     height: 420px;
-   }
+  }
   .main_box {
     width: 668px;
     margin: 40px 44px 70px 47px;
@@ -130,7 +130,7 @@
     margin: 0;
   }
   .service_title {
-    margin: 50px 0 0 57px;
+    margin: 60px 0 0 50px;
   }
   .service_title h2 {
     font-size: 35px;
@@ -147,7 +147,15 @@
   .services_container {
     width: 668px;
   }
-  .service_item {
+  .service_item_garden {
+    width: 280px;
+    margin-bottom: 38px;
+  }
+  .service_item_planting {
+    width: 280px;
+    margin-bottom: 38px;
+  }
+  .service_item_lawnCare {
     width: 280px;
     margin-bottom: 38px;
   }
@@ -261,8 +269,8 @@
   .burger {
     display: block;
     position: absolute;
-    top: 41px;
-    right: 18px;
+    top: 38px;
+    right: 16px;
     z-index: 10;
   }
   .container {
@@ -272,43 +280,44 @@
     height: 96px;
   }
   .logo {
-    margin: 7px 0 0 -1px;
+    margin: 3px 0 0 -1px;
   }
   #nav {
     display: none;
+     
   }
   #nav.active {
     display: block;
     height: 10px;
     width: 265px;
   }
-.nav_list.active{
-    max-width: 305px;
+    .nav_list.active {
+      max-width: 305px;
     margin-top: 17px;
     position: relative;
     top: 15px;
     right: 67px;
-    background: linear-gradient(45deg, lime, transparent);
-}
-.nav_list.active li {
-  margin-right: 28px;
-}
-.nav_list.active li:nth-child(1){
-  margin-left: 10px;
-}
-.nav_list.active li:last-child{
-  margin-right: 0;
-}
-.nav_list.active a{
-  text-decoration: none;
-}
+    background: linear-gradient(90deg, #cfecd0, #9ec0db);
+  }
+  .nav_list.active li {
+    margin-right: 28px;
+  }
+  .nav_list.active li:nth-child(1) {
+    margin-left: 10px;
+  }
+  .nav_list.active li:last-child {
+    margin-right: 0;
+  }
+  .nav_list.active a {
+    text-decoration: none;
+  }
   .navbar {
     max-width: 330px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    margin-top: -6px;
+    margin-top: -11px;
   }
   .main {
     height: 300px;
@@ -326,7 +335,7 @@
     height: 72px;
   }
   .title_info {
-    margin: 19px 0 20px 0;
+    margin: 17px 0 20px 0;
     max-width: 316px;
     height: 106px;
     line-height: 25px;
@@ -378,18 +387,22 @@
 
   #section_service {
     height: 3175px;
+    margin-bottom: 7px;
   }
   .services_content {
     max-width: 380px;
   }
   .service_title {
-    margin: 28px 0 10px 25px;
+    margin: 35px 0 10px 25px;
   }
   .service_title h2 {
     max-width: 188px;
     font-size: 25px;
     line-height: 32px;
   }
+  /* .title_advice {
+       margin: 16px 2px 0 0;
+  } */
   .service_button {
     margin: 0 0 40px 25px;
   }
@@ -413,23 +426,23 @@
     font-size: 15px;
     line-height: 19px;
   }
-   .services_container {
+  .services_container {
     max-width: 280px;
   }
-  .service_item {
-    margin-bottom: 34px;
+  .service_item_garden {
+    margin-top: 7px;
   }
   .service_image {
     max-width: 280px;
   }
-   #section_price {
+  #section_price {
     height: 512px;
   }
   .price_container {
     max-width: 380px;
     flex-direction: column;
   }
-    .price_title {
+  .price_title {
     margin: 23px 0 19px 153px;
   }
   .price_title h2 {
@@ -444,7 +457,7 @@
     max-height: 235px;
     margin-left: 79px;
   }
-   .price_item {
+  .price_item {
     margin-bottom: 14px;
     margin-left: 22px;
   }
@@ -467,7 +480,7 @@
     margin: 2px 39px 0 0;
   }
   .connection_container {
-    margin: 16px 0 0 10px;
+    margin: 18px 0 0 10px;
   }
   .connection_us {
     text-align: center;
@@ -475,7 +488,7 @@
     width: 230px;
     height: 126px;
   }
- 
+
   .connection_title h3 {
     width: 230px;
     font-size: 20px;
@@ -504,12 +517,12 @@
     width: 192px;
     font-size: 25px;
     line-height: 32px;
-    margin: 23px 0 0 93px;
+    margin: 28px 0 80px 93px;
     height: 34px;
   }
   .contact_container {
     max-width: 380px;
-    margin-top: -56px;
+    /* margin-top: -56px; */
   }
   .contact_container .item_box {
     width: 300px;
@@ -524,17 +537,17 @@
     width: 204px;
     margin: 0;
   }
-    .contact_container .price_btn {
+  .contact_container .price_btn {
     margin-left: 38px;
   }
   .footer {
     height: 146px;
   }
   .footer_content {
-    margin-top: 27px;
+    margin-top: 39px;
     margin-left: 6px;
   }
-   .social_list {
+  .social_list {
     margin-top: 5px;
   }
 }

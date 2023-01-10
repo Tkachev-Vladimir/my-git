@@ -1,47 +1,131 @@
-<html>
-    <head>
-        <title>JavaScript показать и скрыть элемент с текстом | Дизайн студия OX2</title>
-    </head>
-    <body>
-        <script type="text/javascript">
-            /**
-            * Функция Скрывает/Показывает блок 
-            * @author ox2.ru дизайн студия
-            **/
-            function showHide(element_id) {
-                //Если элемент с id-шником element_id существует
-                if (document.getElementById(element_id)) { 
-                    //Записываем ссылку на элемент в переменную obj
-                    var obj = document.getElementById(element_id); 
-                    //Если css-свойство display не block, то: 
-                    if (obj.style.display != "block") { 
-                        obj.style.display = "block"; //Показываем элемент
-                    }
-                    else obj.style.display = "none"; //Скрываем элемент
-                }
-                //Если элемент с id-шником element_id не найден, то выводим сообщение
-                else alert("Элемент с id: " + element_id + " не найден!"); 
-            }   
-        </script>
- 
-<!-- При клике запускаем функцию showHide, и передаем параметр 
-        id-шник элемента который нужно показать/скрыть -->
-        <button onclick="showHide('block_id')">Скрыть/Показать элемент</button><br/><br/>
-        <div id="block_id" style="display: none;">
-            Тут любой текст и html код<br/>
-            <br/>
-            Дизайн студия OX2 разрабатывает сайты и интернет магазины любой сложности. <br/>
-            По низким ценам! 
-            <div class="afgag">
-<div class="lalalglagla">agkadmgadjkmgadg</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tat.css">
+</head>
+<body>
+<!-- <template id="car-template">
+  <div class="car">
+    Марка автомобиля: <span class="model">Dodge</span><br>
+    Год выпуска: <span class="year">1967</span><br>
+    Цвет: <span class="color">красный</span><br>
+    Тип кузова: <span class="body">         Hard Top</span><br>
+    <img src="" alt="" class="img">
+  </div>
+</template> -->
+
+
+        <div class="contact_container">
+          <div class="contact_item_box">
+            <div class="city">
+              <p>City</p>
             </div>
-        </div>
-  <a href="javascript:void(0)" onclick="showHide('block_id')">Скрыть/Показать элемент</a><br/><br/>
+           
+            <button class="contact_btn">
+              <img src="img/contBtnLeft.svg" alt="ok" />
+              <img src="img/contBtnRight.svg" alt="OK" />
+            </button>
+          </div>
+          <div class="dropdown">
+            <div class="drop_content">
+              <div class="drop_city">City</div><div class="line"></div>
+           <div class="drop_city">Canandaigua, NY </div><div class="line"></div>
+           <div class="drop_city">New York City  </div><div class="line"></div>
+           <div class="drop_city">Yonkers, NY </div> <div class="line"></div>
+           <div class="drop_city">Sherrill, NY </div> <div class="line"></div>
+          </div>
+          </div>
+
+<div class="card">
+  <div class="twoColumn">
+      <div class="cards">
+     <div class="name">City:</div> 
+          <div  class="name">Phone: </div>
+     <div class="name"> Office adress:</div>
+ 
+   </div>
+   <div class="cardTwo">
+    <div class="card-city">Canandaigua, NY</div>
+ <div class="card-phone">+1	585	393 0001</div>
+<div class="card-adress">151 Charlotte Street</div>
+   </div>
+      </div>
+   <a  class="tel" href="tel:15853930001">Call Us</a>
+  
+  </div>
+
+  <div class="card">
+  <div class="twoColumn">
+      <div class="cards">
+     <div class="name">City:</div> 
+          <div  class="name">Phone: </div>
+     <div class="name"> Office adress:</div>
+ 
+   </div>
+   <div class="cardTwo">
+    <div class="card-city">New York City</div>
+ <div class="card-phone">+1 212 456 0002</div>
+<div class="card-adress">9 East 91st Street</div>
+   </div>
+      </div>
+<a class="tel" href="tel:12124560002">Call Us </a>
+    </div>
+
+  <div class="card">
+  <div class="twoColumn">
+      <div class="cards">
+     <div class="name">City:</div> 
+          <div  class="name">Phone: </div>
+     <div class="name"> Office adress:</div>
+ 
+   </div>
+   <div class="cardTwo">
+    <div class="card-city">Yonkers, NY</div>
+ <div class="card-phone">+1	914	678 0003</div>
+<div class="card-adress">511 Warburton Ave</div>
+   </div>
+      </div>
+   <a  class="tel" href="tel:19146780003">Call Us </a>
+    </div>
+
+  <div class="card">
+  <div class="twoColumn">
+      <div class="cards">
+     <div class="name">City:</div> 
+       <div  class="name">Phone: </div>
+     <div class="name"> Office adress:</div>
+ 
+   </div>
+   <div class="cardTwo">
+    <div class="card-city">Sherrill, NY</div>
+ <div class="card-phone">+1	315	908 0004</div>
+<div class="card-adress">14 WEST Noyes BLVD</div>
+   </div>
+      </div>
+   <a class="tel" href="tel:13159080004">Call Us</a>
+     </div>
+          </div>
+          <!-- end item_box -->
+            <!-- </section> -->
+            <script src="tat.js"></script>
     </body>
-</html>
+    </html>
+    
+    
 
 
 
-
-
-
+    <!-- 
+    <template id="car-template">
+      <div class="car">
+        Марка автомобиля: <span class="model">Dodge</span><br>
+        Год выпуска: <span class="year">1967</span><br>
+        Цвет: <span class="color">красный</span><br>
+        Тип кузова: <span class="body">Hard Top</span><br>
+        <img src="" alt="" class="img">
+      </div>
+    </template> -->

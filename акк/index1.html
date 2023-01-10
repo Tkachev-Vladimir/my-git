@@ -132,9 +132,11 @@
           </div>
           <div class="service_button">
             <ul class="service_list_btn">
-              <li><button class="btn">Gardens</button></li>
-              <li><button class="btn">Lawn</button></li>
-              <li><button class="btn">Planting</button></li>
+              <li><button class="btn" onclick="garden('')">Gardens</button></li>
+              <li><button class="btn" onclick="lawnCare('')">Lawn</button></li>
+              <li>
+                <button class="btn" onclick="planting('')">Planting</button>
+              </li>
             </ul>
             <!-- end servise_bnt -->
           </div>
@@ -143,7 +145,7 @@
         <div class="services">
           <div class="services_container">
             <!-- start 1 -->
-            <div class="service_item">
+            <div class="service_item_garden">
               <div class="service_image">
                 <img src="img/service1.png" alt="GardenCare" />
               </div>
@@ -157,7 +159,7 @@
               </div>
             </div>
             <!-- start 2 -->
-            <div class="service_item">
+            <div class="service_item_planting">
               <div class="service_image">
                 <img src="img/service2.png" alt="Planting" />
               </div>
@@ -171,7 +173,7 @@
               </div>
             </div>
             <!-- start 3 -->
-            <div class="service_item">
+            <div class="service_item_lawnCare">
               <div class="service_image">
                 <img src="img/service3.png" alt="LawnCare" />
               </div>
@@ -185,7 +187,7 @@
               </div>
             </div>
             <!-- start 4 -->
-            <div class="service_item">
+            <div class="service_item_planting">
               <div class="service_image">
                 <img src="img/service5.png" alt="Planting" />
               </div>
@@ -199,7 +201,7 @@
               </div>
             </div>
             <!-- start 5 -->
-            <div class="service_item">
+            <div class="service_item_garden">
               <div class="service_image">
                 <img src="img/service4.png" alt="GardenCare" />
               </div>
@@ -213,7 +215,7 @@
               </div>
             </div>
             <!-- start 6 -->
-            <div class="service_item">
+            <div class="service_item_planting">
               <div class="service_image">
                 <img src="img/service6.png" alt="Planting" />
               </div>
@@ -250,6 +252,18 @@
                     </button>
                     <!-- end item_box -->
                   </div>
+                  <div class="acc">
+                    <div class="border"></div>
+                    <p class="acc_text">
+                      Release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently
+                    </p>
+                    <p class="per_hour">
+                      <span class="dollar">$</span>
+                      <span class="price">15</span> / per hour
+                    </p>
+                    <button class="order">Order</button>
+                  </div>
                   <!-- end price_item -->
                 </div>
                 <div class="price_item">
@@ -261,6 +275,18 @@
                     </button>
                     <!-- end item_box -->
                   </div>
+                  <div class="acc">
+                    <div class="border"></div>
+                    <p class="acc_text">
+                      Release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently
+                    </p>
+                    <p class="per_hour">
+                      <span class="dollar">$</span>
+                      <span class="price">25</span> / per hour
+                    </p>
+                    <button class="order">Order</button>
+                  </div>
                   <!-- end price_item -->
                 </div>
                 <div class="price_item">
@@ -271,6 +297,18 @@
                       <img src="img/priceBtn.svg" alt="OK" />
                     </button>
                     <!-- end item_box -->
+                  </div>
+                  <div class="acc">
+                    <div class="border"></div>
+                    <p class="acc_text">
+                      Release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently
+                    </p>
+                    <p class="per_hour">
+                      <span class="dollar">$</span>
+                      <span class="price">35</span> / per hour
+                    </p>
+                    <button class="order">Order</button>
                   </div>
                   <!-- end price_item -->
                 </div>
@@ -289,7 +327,7 @@
                 </h3>
                 <!-- end connection_title -->
               </div>
-              <button class="btn">Contact us</button>
+              <button class="btn_contact">Contact us</button>
               <!-- end connection_us -->
             </div>
             <div class="prices_leafs">
@@ -309,28 +347,56 @@
         <img src="/img/contact_woman1.png" class="img_woman" alt="Woman" />
         <h3 class="contact_title">Contact us</h3>
         <div class="contact_container">
-          <div class="item_box">
-            <!-- <div class="city">
+          <div class="contact_item_box">
+            <div class="city">
               <p>City</p>
             </div>
-            -->
-            <input type="text" placeholder="City" class="city" />
-            <button class="price_btn" onclick="showHide('city')">
+
+            <!-- <input type="text" placeholder="City" class="city" /> -->
+            <button class="contact_btn" onclick="showHide('city')">
               <img src="img/contBtnLeft.svg" alt="ok" />
               <img src="img/contBtnRight.svg" alt="OK" />
             </button>
-            <div id="city" class="select_body">
-              <div class="select_item">Canandaigua, NY</div>
-              <div class="select_item">New York City</div>
-              <div class="select_item">Yonkers, NY</div>
-              <div class="select_item">Sherrill, NY</div>
+         
             </div>
+<div class="dropdown">
+            <div class="drop_content">
+              <div class="drop_city">City</div><div class="line"></div>
+           <div class="drop_city">Canandaigua, NY </div><div class="line"></div>
+           <div class="drop_city">New York City  </div><div class="line"></div>
+           <div class="drop_city">Yonkers, NY </div> <div class="line"></div>
+           <div class="drop_city">Sherrill, NY </div> <div class="line"></div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+     <div class="card">
+      <div class="cards">
+     <span class="name">City:</span> <span class="card-city">Canandaigua, NY</span><br>
+     <span class="name">Phone: </span><span class="card-phone">+1	585	393 0001</span><br>
+ <span class="name"> Office adress:</span><span class="card-adress">151 Charlotte Street</span><br>
+   </div>
+<button class="card_btn">Call us</button>
+
+
+     </div>
+
+
+
+
+
+
           </div>
           <!-- end item_box -->
         </div>
       </section>
       <!-- <script>
-  </script> -->
+      </script> -->
       <!-- 
   <select class="select_city" size="4" >
              <option value="Option 1">Canandaigua, NY</option>
@@ -353,11 +419,15 @@
         </div>
         <div class="social_list">
           <ul>
-            <li class="inst"><img src="img/inst.svg" alt="Instagramm" /></li>
-            <li class="fb"><img src="img/facebook.svg" alt="Facebook" /></li>
-            <li class="tw"><img src="img/twitter.svg" alt="Twitter" /></li>
+            <li class="inst">
+               <a href="https://www.instagram.com/"><img src="img/inst.svg" alt="Instagramm" /></a></li>
+            <li class="fb">
+              <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="Facebook" /></a></li>
+            <li class="tw">
+              <a href="https://twitter.com/"><img src="img/twitter.svg" alt="Twitter" /></a></li>
             <li class="pint">
-              <img src="img/pinterest.svg" alt="Pinterest" />
+              <a href="https://www.pinterest.com
+"><img src="img/pinterest.svg" alt="Pinterest" /></a>
             </li>
           </ul>
           <!-- end social_list -->
